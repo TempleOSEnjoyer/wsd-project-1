@@ -1,6 +1,11 @@
 import { Client } from "../deps.js";
 
-const client = new Client();
+let client;
+if (Deno.env.get("DATABASE_URL")) {
+  client = new Client(Deno.env.get("DATABASE_URL"));
+} else {
+  client = new Client({});
+}
 
 const executeQuery = async (query, params) => {
   const response = {};

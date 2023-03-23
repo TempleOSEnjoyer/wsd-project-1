@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shared shopping lists</title>
+  </head>
+  <body>
+    <%~ it.body %>
+  </body>
+</html>

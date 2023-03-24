@@ -1,6 +1,5 @@
 <% layout("./layouts/layout.eta") %>
 <body>
-    <h1>Shared shopping lists</h1>
     <h2><a href="/lists">Lists</a></h2>
     <ul>
         <% if (Number(it.list_count) === 0) { %>

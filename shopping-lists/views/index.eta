@@ -1,6 +1,8 @@
 <% layout("./layouts/layout.eta") %>
-<body>
+<head>
     <h2><a href="/lists">Lists</a></h2>
+</head>
+<body>
     <ul>
         <% if (Number(it.list_count) === 0) { %>
             <li>No shopping lists yet.</li>

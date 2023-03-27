@@ -40,8 +40,11 @@ const addItemToShoppingList = async (request) => {
 };
 
 const alphaOrder = (a, b) => {
-  const aa = a.name.toLowerCase();
-  const bb = b.name.toLowerCase(); 
+  const aa = a.name.toLowerCase().replace(/\s/g, '');
+  const bb = b.name.toLowerCase().replace(/\s/g, '');
+
+  console.log("Comparing: ", aa, bb);
+
   if (aa < bb) { 
     return -1;
   } else if (aa > bb) {

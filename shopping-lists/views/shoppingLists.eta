@@ -1,9 +1,13 @@
 <% layout("./layouts/layout.eta") %>
-<body>
+<head>
     <h2><a href="/">Main page</a></h2>
-    <form method="POST">
-        name: <input type="text" name="name" /><input type="submit" value="Submit!" /><br/>
-    </form>
+</head>
+<body>
+    <b1>
+        <form method="POST">
+            name: <input type="text" name="name" /><input type="submit" value="Submit!" /><br/>
+        </form>
+    </b1>
     <ul>
         <% it.lists.forEach((list_obj) => { %>
             <li>

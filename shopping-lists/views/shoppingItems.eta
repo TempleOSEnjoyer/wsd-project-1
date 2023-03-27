@@ -1,27 +1,27 @@
 <% layout("./layouts/layout.eta") %>
+<head>
+    <h2><a href="/lists">Shopping lists</a></h2>
+    <h3><%=it.shopping_list_name %></h3>
+</head>
 <body>
-    <h3><a href="/lists">Shopping lists</a></h3>
-    <h2><%=it.shopping_list_name %></h2>
-    <form method="POST" action="/lists/<%= it.shopping_list_id%>/items">
-        name: <input type="text" name="name" /><input type="submit" value="Submit!" /><br/>
-    </form>
-    <% if (it.uncollected_items === undefined && it.collected_items === undefined) { %>
-        <p>List is empty</p>
-    <% } else { %>
-        <ul>
-            <% it.uncollected_items.forEach((item_obj) => { %>
-                <li>
-                    <form method="POST" action="/lists/<%= it.shopping_list_id %>/items/<%= item_obj.id %>/collect">
-                        <%=item_obj.name %>
-                        <input type="submit" value="Mark collected!" /><br/>
-                    </form>
-                </li>
-            <% }); %>
-            <% it.collected_items.forEach((item_obj) => { %>
-                <li>
-                    <del><%=item_obj.name %></del>
-                </li>
-            <% }); %>
-        </ul>
-    <% } %>
+    <b1>
+        <form method="POST" action="/lists/<%= it.shopping_list_id%>/items">
+            name: <input type="text" name="name" /><input type="submit" value="Submit!" /><br/>
+        </form>
+    </b1>
+    <ul>
+        <% it.uncollected_items.forEach((item_obj) => { %>
+            <li>
+                <form method="POST" action="/lists/<%= it.shopping_list_id %>/items/<%= item_obj.id %>/collect">
+                    <item><%=item_obj.name %></item>
+                    <input type="submit" value="Mark collected!" /><br/>
+                </form>
+            </li>
+        <% }); %>
+        <% it.collected_items.forEach((item_obj) => { %>
+            <li>
+                <del><%=item_obj.name %></del>
+            </li>
+        <% }); %>
+    </ul>
 </body>

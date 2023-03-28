@@ -8,9 +8,9 @@ running as it is a key part of the submission.
 
 # LINK TO HOSTING SERVICE:
 
-A [link](https://king-terrys-wsd-project-ii-shared.onrender.com/lists)
+A [link](https://king-terry-davis-wsdproject-i-shared.onrender.com)
 
-Note!!! The Onrender hosting service is utter garbage and is slow to respond. I have deactivated all my other webservices made in this course. This seemed to help significantly, however, it is still possible to get the hosting service to prompt "Internal Server Error" if you spam the links. As this doesn't occur when hosting the application locally, regardless of how rapidly you spam, it is clearly a problem with Onrender (Onrender allows only 0.1 CPU for free users) and not the application. 
+Note!!! The Render hosting service is utter garbage and is slow to respond. I have deactivated all my other webservices made in this course. This seemed to help significantly, however, it is still possible to get the hosting service to prompt "Internal Server Error" if you spam the links. As this doesn't occur when hosting the application locally, regardless of how rapidly you spam, it is clearly a problem with Render (Render allows only 0.1 CPU for free users) and not the application. 
 
 I also experienced this with the other online deployment excersices that used databases in the hosting service...
 

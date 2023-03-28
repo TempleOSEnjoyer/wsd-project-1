@@ -1,10 +1,16 @@
 # Project 1: Shared shopping list
 
-Write the documentation of your project here. Do not include your personal
-details (e.g. name or student number).
+This is the shared shopping lists web application. It is used to create shopping lists that can be viewed by users of the service. Shopping items can be added to the shopping lists as well as marked as collected. Items will appear in alphabetical order in the lists and collected items will be at the bottom of the list, striked through and in alphabetical order. Furthermore, once a shopping lists is no longer needed it can be deactivated, thus no longer appearing in the list of shopping lists. However, deativated shopping lists and collected items will still be included in the statistics on the main page along with active lists and uncollected items.
 
-Remember to include the address of the online location where your project is
-running as it is a key part of the submission.
+## Locally launching the application
+
+The Application can be started by running the following command in the root folder (where the docker-compose.yml file is):
+
+"docker-compose up"
+
+Once the application is running, the page is hosted at A [link]("http://localhost:7777/").
+
+
 
 # LINK TO HOSTING SERVICE:
 
